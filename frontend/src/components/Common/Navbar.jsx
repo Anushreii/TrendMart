@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {HiOutlineUser, HiBars3BottomRight, HiOutlineShoppingBag} from 'react-icons/hi2'
+import SearchBar from './SearchBar'
 
 export default function Narvar() {
   return (
@@ -43,6 +44,9 @@ export default function Narvar() {
           </button>
 
           {/* serach */}
+          <div className="overflow-hidden">
+               <SearchBar></SearchBar>
+          </div>
 
           <button className='md:hidden'>
             <HiBars3BottomRight className='h-6 w-6 text-gray-700'></HiBars3BottomRight>
